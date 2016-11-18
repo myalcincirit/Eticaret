@@ -1,0 +1,43 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+@model IEnumerable<Eticaret.Models.Kategoriler>
+
+<div id="content" class="col-xs-12">
+    <div class="row">      
+    
+        @{Html.RenderAction("Slider");}
+
+    </div>
+    <!-- Bestsellers Product Start-->
+   @{Html.RenderAction("BestSeller");}
+    <!-- Banner Start-->
+    @{Html.RenderAction("YeniUrunler");}
+
+
+    <!-- Banner End-->
+    <!-- Categories Product Slider Start-->
+    @{Html.RenderAction("Kategoriler");}
+    
+    <!-- Categories Product Slider End-->
+    <!-- Categories Product Slider Start -->
+    
+    <!-- Categories Product Slider End -->
+    <!-- Banner Start -->
+    
+    <!-- Banner End -->
+    <!-- Brand Logo Carousel Start-->
+    <div id="carousel" class="owl-carousel nxt">
+        <div class="item text-center"> <a href="#"><img src="image/product/apple_logo-100x100.jpg" alt="Palm" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="image/product/canon_logo-100x100.jpg" alt="Sony" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="image/product/apple_logo-100x100.jpg" alt="Canon" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="image/product/canon_logo-100x100.jpg" alt="Apple" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="image/product/apple_logo-100x100.jpg" alt="HTC" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="image/product/canon_logo-100x100.jpg" alt="Hewlett-Packard" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="image/product/apple_logo-100x100.jpg" alt="brand" class="img-responsive" /></a> </div>
+        <div class="item text-center"> <a href="#"><img src="image/product/canon_logo-100x100.jpg" alt="brand1" class="img-responsive" /></a> </div>
+    </div>
+    <!-- Brand Logo Carousel End -->
+</div>
