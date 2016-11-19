@@ -19,7 +19,6 @@ namespace Eticaret.Models
         public DbSet<Admin> Admins { get; set; }
         public DbSet<Kategoriler> Kategorilers { get; set; }
         public DbSet<Kullanicilar> Kullanicilars { get; set; }
-        public DbSet<Sepet> Sepets { get; set; }
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<sysdiagram> sysdiagrams { get; set; }
         public DbSet<Urunler> Urunlers { get; set; }
@@ -29,7 +28,6 @@ namespace Eticaret.Models
             modelBuilder.Configurations.Add(new AdminMap());
             modelBuilder.Configurations.Add(new KategorilerMap());
             modelBuilder.Configurations.Add(new KullanicilarMap());
-            modelBuilder.Configurations.Add(new SepetMap());
             modelBuilder.Configurations.Add(new SliderMap());
             modelBuilder.Configurations.Add(new sysdiagramMap());
             modelBuilder.Configurations.Add(new UrunlerMap());

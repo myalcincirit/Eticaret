@@ -14,5 +14,6 @@ namespace Eticaret.Models
         public Nullable<int> cResimId { get; set; }
         public string kUrunResim { get; set; }
         public Nullable<System.DateTime> Tarih { get; set; }
+        public string kkUrunResim { get; set; }
     }
 }

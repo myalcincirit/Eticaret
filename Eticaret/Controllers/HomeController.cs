@@ -16,7 +16,7 @@ namespace Eticaret.Controllers
 
         public ActionResult Index()
         {
-            return View(db.Kategorilers.ToList());
+            return View(db.Urunlers.ToList());
         }
         public ActionResult Slider()
         {
@@ -32,7 +32,7 @@ namespace Eticaret.Controllers
         }
         public ActionResult Kategoriler()
         {
-            return View(db.Urunlers.ToList());
+            return View(db.Kategorilers.ToList());
         }
 
 

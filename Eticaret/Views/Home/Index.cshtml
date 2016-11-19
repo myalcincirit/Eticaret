@@ -3,12 +3,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
     }
 
-@model IEnumerable<Eticaret.Models.Kategoriler>
+@model IEnumerable<Eticaret.Models.Urunler>
 
 <div id="content" class="col-xs-12">
     <div class="row">      
     
-        @{Html.RenderAction("Slider");}
+       @{Html.RenderAction("Slider");}
 
     </div>
     <!-- Bestsellers Product Start-->
@@ -19,7 +19,6 @@
 
     <!-- Banner End-->
     <!-- Categories Product Slider Start-->
-    @{Html.RenderAction("Kategoriler");}
     
     <!-- Categories Product Slider End-->
     <!-- Categories Product Slider Start -->

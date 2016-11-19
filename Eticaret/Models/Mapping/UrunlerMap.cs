@@ -31,6 +31,7 @@ namespace Eticaret.Models.Mapping
             this.Property(t => t.cResimId).HasColumnName("cResimId");
             this.Property(t => t.kUrunResim).HasColumnName("kUrunResim");
             this.Property(t => t.Tarih).HasColumnName("Tarih");
+            this.Property(t => t.kkUrunResim).HasColumnName("kkUrunResim");
         }
     }
 }

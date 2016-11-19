@@ -133,11 +133,9 @@
     <Compile Include="Models\Mapping\AdminMap.cs" />
     <Compile Include="Models\Mapping\KategorilerMap.cs" />
     <Compile Include="Models\Mapping\KullanicilarMap.cs" />
-    <Compile Include="Models\Mapping\SepetMap.cs" />
     <Compile Include="Models\Mapping\SliderMap.cs" />
     <Compile Include="Models\Mapping\sysdiagramMap.cs" />
     <Compile Include="Models\Mapping\UrunlerMap.cs" />
-    <Compile Include="Models\Sepet.cs" />
     <Compile Include="Models\Slider.cs" />
     <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Models\Urunler.cs" />
