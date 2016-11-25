@@ -5,18 +5,18 @@
         <div class="navbar-header"> <span class="visible-xs visible-sm"> Menü <b></b></span></div>
         <div class="collapse navbar-collapse navbar-ex1-collapse">
             <ul class="nav navbar-nav">
-                <li><a class="home_link" title="Home" href="/"><span>AnaSayfa</span></a></li>
+                <li><a class="home_link" title="Home" href="//"><span>AnaSayfa</span></a></li>
                 @foreach (var item in Model)
                 {
                     <li class="menu_brands dropdown">
-                        <a href="/Kategorilerr/Index/@item.id">@item.KategoriAd</a>
+                        <a href="//Kategorilerr/Index/@item.id">@item.KategoriAd</a>
                         <div class="dropdown-menu">
                             @{
                                 Eticaret.Models.EticaretContext db = new Eticaret.Models.EticaretContext();
                                 var gelenUrun = db.Urunlers.Where(x => x.id == item.Urunİd);
                                 foreach (var urunler in gelenUrun)
                                 {
-                                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6"><a href="Detay/Index/@urunler.id"><img src="@urunler.kkUrunResim" title="@urunler.UrunAdi" alt="@urunler.UrunAdi" /></a><a href="Detay/Index/@urunler.id">@urunler.UrunAdi</a></div>
+                                    <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6"><a href="/Detay/Index/@urunler.id"><img src="/@urunler.kkUrunResim" title="@urunler.UrunAdi" alt="@urunler.UrunAdi" /></a><a href="/Detay/Index/@urunler.id">@urunler.UrunAdi</a></div>
 
                                 }
 
@@ -27,8 +27,8 @@
                 
                 
                 
-                <li class="contact-link"><a href="contact-us.html">Contact Us</a></li>
-                <li class="custom-link-right"><a href="#" target="_blank">Ayın İndirimi</a></li>
+                <li class="contact-link"><a href="/contact-us.html">Contact Us</a></li>
+                <li class="custom-link-right"><a href="/#" target="_blank">Ayın İndirimi</a></li>
             </ul>
         </div>
     </div>

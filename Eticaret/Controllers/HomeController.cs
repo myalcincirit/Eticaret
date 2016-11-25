@@ -28,7 +28,7 @@ namespace Eticaret.Controllers
         }
         public ActionResult YeniUrunler()
         {
-            return View(db.Urunlers.OrderByDescending(x => x.Tarih).ToList());
+            return View(db.Urunlers.ToList().Take(10));
         }
         public ActionResult Kategoriler()
         {

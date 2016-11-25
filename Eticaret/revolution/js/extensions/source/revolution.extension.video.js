@@ -440,9 +440,9 @@ jQuery.extend(true,_R, {
 
 				if (videopreload=="auto") opt.mediapreload = true;
 				//if (_nc.data('videoposter')!=undefined) apptxt = apptxt + 'poster="'+_nc.data('videoposter')+'">';
-				if (videowebm!=undefined && _R.get_browser().toLowerCase()=="firefox") apptxt = apptxt + '<source src="'+videowebm+'" type="video/webm" />';
-				if (videomp!=undefined) apptxt = apptxt + '<source src="'+videomp+'" type="video/mp4" />';
-				if (videoogv!=undefined) apptxt = apptxt + '<source src="'+videoogv+'" type="video/ogg" />';
+				if (videowebm!=undefined && _R.get_browser().toLowerCase()=="firefox") apptxt = apptxt + '<source src="/'+videowebm+'" type="video/webm" />';
+				if (videomp!=undefined) apptxt = apptxt + '<source src="/'+videomp+'" type="video/mp4" />';
+				if (videoogv!=undefined) apptxt = apptxt + '<source src="/'+videoogv+'" type="video/ogg" />';
 				apptxt = apptxt + '</'+tag+'>';
 				var hfm ="";
 				if (videoafs==="true" ||  videoafs===true)
@@ -510,13 +510,13 @@ jQuery.extend(true,_R, {
 			 	}	
 			 	
 			 	var yafv = videoafs==="true" ||  videoafs===true ? "allowfullscreen" : "";		 	
-			 	_nc.data('videomarkup','<iframe style="visible:hidden" src="'+httpprefix+'://www.youtube.com/embed/'+vidytid+'?'+vida_new+'" '+yafv+' width="100%" height="100%" style="width:100%;height:100%"></iframe>');
+			 	_nc.data('videomarkup','<iframe style="visible:hidden" src="/'+httpprefix+'://www.youtube.com/embed/'+vidytid+'?'+vida_new+'" '+yafv+' width="100%" height="100%" style="width:100%;height:100%"></iframe>');
 			break;
 
 			case "vimeo":
 				if (location.protocol === 'https:')
 					httpprefix = "https";												
-				_nc.data('videomarkup','<iframe style="visible:hidden" src="'+httpprefix+'://player.vimeo.com/video/'+vimeoid+'?autoplay=0&'+vida+'" webkitallowfullscreen mozallowfullscreen allowfullscreen width="100%" height="100%" style="100%;height:100%"></iframe>');
+				_nc.data('videomarkup','<iframe style="visible:hidden" src="/'+httpprefix+'://player.vimeo.com/video/'+vimeoid+'?autoplay=0&'+vida+'" webkitallowfullscreen mozallowfullscreen allowfullscreen width="100%" height="100%" style="100%;height:100%"></iframe>');
 				
 			break;
 		}

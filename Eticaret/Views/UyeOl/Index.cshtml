@@ -1,0 +1,108 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model Eticaret.Models.Kullanicilar
+
+<div id="container">
+    <div class="container">
+        <!-- Breadcrumb Start-->
+        
+        <!-- Breadcrumb End-->
+        <div class="row">
+            <!--Middle Part Start-->
+            <div class="col-sm-9" id="content">
+                <h1 class="title">Kullanıcı Kayıt</h1>
+                <form class="form-horizontal" method="post" action="/UyeOl/Kayit/">
+                    <fieldset id="account">
+                        <legend>Your Personal Details</legend>
+                        <div style="display: none;" class="form-group required">
+                            <label class="col-sm-2 control-label">Customer Group</label>
+                            <div class="col-sm-10">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" checked="checked" value="1" name="customer_group_id">
+                                        Default
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label for="input-firstname" class="col-sm-2 control-label">First Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-firstname" placeholder="First Name" value="" name="firstname">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label for="input-lastname" class="col-sm-2 control-label">Last Name</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-lastname" placeholder="Last Name" value="" name="lastname">
+                            </div>
+                        </div>
+
+                        <div class="form-group required">
+                            <label for="input-email" class="col-sm-2 control-label">E-Mail</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="input-email" placeholder="E-Mail" value="" name="email">
+                            </div>
+                            @*<p>If you already have an account with us, please login at the <a href="/login.html">Login Page</a>.</p>*@
+
+                        </div>
+                        <div class="form-group required">
+                            <label for="input-telephone" class="col-sm-2 control-label">Telephone</label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="input-telephone" placeholder="Telephone" value="" name="telephone">
+                            </div>
+                        </div>
+                        
+                    </fieldset>
+                    <fieldset id="address">
+                        <legend>Your Address</legend>
+                        
+                        <div class="form-group required">
+                            <label for="input-address-1" class="col-sm-2 control-label">Address 1</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-address-1" placeholder="Address 1" value="" name="address_1">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label for="input-city" class="col-sm-2 control-label">City</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="input-city" placeholder="City" value="" name="city">
+                            </div>
+                        </div>
+                             
+                        
+                    </fieldset>
+                    <fieldset>
+                        <legend>Your Password</legend>
+                        <div class="form-group required">
+                            <label for="input-password" class="col-sm-2 control-label">Password</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="input-password" placeholder="Password" value="" name="password">
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label for="input-confirm" class="col-sm-2 control-label">Password Confirm</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="input-confirm" placeholder="Password Confirm" value="" name="confirm">
+                            </div>
+                        </div>
+                    </fieldset>
+                    
+                    <div class="buttons">
+                        <div class="pull-right">
+                            <input type="checkbox" value="1" name="agree">
+                            &nbsp;I have read and agree to the <a class="agree" href="/#"><b>Privacy Policy</b></a> &nbsp;
+                            <input type="submit" class="btn btn-primary" value="Continue">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--Middle Part End -->
+            <!--Right Part Start -->
+            
+            <!--Right Part End -->
+        </div>
+    </div>
+</div>
