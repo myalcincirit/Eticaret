@@ -31,6 +31,20 @@
                                 <ul>
                                     <li class="mobile"><i class="fa fa-phone"></i>Telefon Numarası</li>
                                     <li class="email"><a href="mailto:info@eticaret.com<"><i class="fa fa-envelope"></i>Mail Adressi</a></li>
+                                    @try
+                                    {
+                                        <li class="mobile"><i class="fa fa-phone"></i>@Session["deger"].ToString()</li>
+
+                                        
+
+                                    }
+                                    catch
+                                    {
+
+
+                                    }
+                                                                
+                                   
 
                                 </ul>
                             </div>

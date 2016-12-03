@@ -15,7 +15,7 @@ namespace Eticaret.Controllers
 
 
         public ActionResult Index()
-        {
+        {     
             return View(db.Urunlers.ToList());
         }
         public ActionResult Slider()
