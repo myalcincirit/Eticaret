@@ -13,7 +13,7 @@
                         <div class="dropdown-menu">
                             @{
                                 Eticaret.Models.EticaretContext db = new Eticaret.Models.EticaretContext();
-                                var gelenUrun = db.Urunlers.Where(x => x.id == item.Urunİd);
+                                var gelenUrun = db.Urunlers.Where(x => x.KategoriId == item.id);
                                 foreach (var urunler in gelenUrun)
                                 {
                                     <div class="col-lg-1 col-md-2 col-sm-3 col-xs-6"><a href="/Detay/Index/@urunler.id"><img src="/@urunler.kkUrunResim" title="@urunler.UrunAdi" alt="@urunler.UrunAdi" /></a><a href="/Detay/Index/@urunler.id">@urunler.UrunAdi</a></div>

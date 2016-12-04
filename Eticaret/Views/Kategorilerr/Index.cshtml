@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@model IEnumerable<Eticaret.Models.Urunler>
+<div class="marketshop-banner">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><a href="/Detay/Index/@item.id"><img title="@item.UrunAdi" alt="@item.UrunAdi" src="/@item.UrunResimYol"></a></div>               
+            
+        }
+            </div>
+</div>

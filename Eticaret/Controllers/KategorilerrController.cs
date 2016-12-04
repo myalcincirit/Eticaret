@@ -15,7 +15,7 @@ namespace Eticaret.Controllers
 
         public ActionResult Index(int id)
         {
-            var deger = db.Kategorilers.Where(x => x.Urunİd == id);
+            var deger = db.Urunlers.Where(x => x.KategoriId == id).ToList();
 
             return View(deger);
         }
