@@ -127,6 +127,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KategorilerrController.cs" />
     <Compile Include="Controllers\UyeOlController.cs" />
+    <Compile Include="Controllers\YorumYapController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -140,9 +141,11 @@
     <Compile Include="Models\Mapping\SliderMap.cs" />
     <Compile Include="Models\Mapping\sysdiagramMap.cs" />
     <Compile Include="Models\Mapping\UrunlerMap.cs" />
+    <Compile Include="Models\Mapping\YorumlarMap.cs" />
     <Compile Include="Models\Slider.cs" />
     <Compile Include="Models\sysdiagram.cs" />
     <Compile Include="Models\Urunler.cs" />
+    <Compile Include="Models\Yorumlar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -821,6 +824,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Detay\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\YorumYap\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

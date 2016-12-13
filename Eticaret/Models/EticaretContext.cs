@@ -22,6 +22,7 @@ namespace Eticaret.Models
         public DbSet<Slider> Sliders { get; set; }
         public DbSet<sysdiagram> sysdiagrams { get; set; }
         public DbSet<Urunler> Urunlers { get; set; }
+        public DbSet<Yorumlar> Yorumlars { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -31,6 +32,7 @@ namespace Eticaret.Models
             modelBuilder.Configurations.Add(new SliderMap());
             modelBuilder.Configurations.Add(new sysdiagramMap());
             modelBuilder.Configurations.Add(new UrunlerMap());
+            modelBuilder.Configurations.Add(new YorumlarMap());
         }
     }
 }
