@@ -7,6 +7,7 @@ namespace Eticaret.Models
     {
         public int id { get; set; }
         public string ResimYolu { get; set; }
-        public string inResimYolu { get; set; }
+        public string BirResimYolu { get; set; }
+        public string İkiResimYolu { get; set; }
     }
 }

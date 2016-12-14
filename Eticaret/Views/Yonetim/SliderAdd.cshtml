@@ -1,0 +1,51 @@
+﻿@model Eticaret.Models.Slider
+
+@{
+    ViewBag.Title = "SliderAdd";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<h2>SliderAdd</h2>
+
+@using (Html.BeginForm("SliderAdd", "Yonetim", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Slider</legend>
+        <p>
+            <div class="editor-label">
+                Slider Resimleri
+            </div>
+            <div class="editor-field">
+                <input type="file" name="Slider1" value="@Model.ResimYolu" multiple />
+            </div>
+        </p>
+       
+        <p>
+            <div class="editor-label">
+                Sağ Üst Birinci Resim
+            </div>
+            <div class="editor-field">
+                <input type="file" name="resim1" value="@Model.BirResimYolu" />
+            </div>
+        </p>
+        <p>
+            <div class="editor-label">
+                Sağ Üst İkinci Resim
+            </div>
+            <div class="editor-field">
+                <input type="file" name="resim2" value="@Model.İkiResimYolu" />
+            </div>
+        </p>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

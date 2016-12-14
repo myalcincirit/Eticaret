@@ -1,0 +1,91 @@
+﻿@model IEnumerable<Eticaret.Models.Urunler>
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/Admin.cshtml";
+}
+
+<h2>Details</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.UrunAdi)
+        </th>    
+     
+                
+        <th>
+            @Html.DisplayNameFor(model => model.UrunFiyati)
+        </th>
+
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.UrunAciklamasi)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.UrunResimYol)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.UrunRengi)
+        </th>  
+        
+         
+        <th>
+            @Html.DisplayNameFor(model => model.Tarih)
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.UrunAdi)
+        </td>
+
+
+        <td>
+            @Html.DisplayFor(modelItem => item.UrunFiyati)
+        </td>
+
+
+        <td>
+            @Html.DisplayFor(modelItem => item.UrunAciklamasi)
+        </td>
+
+
+
+        <td>
+            @Html.DisplayFor(modelItem => item.UrunResimYol)
+        </td>
+
+
+
+        <td>
+            @Html.DisplayFor(modelItem => item.UrunRengi)
+        </td>
+        
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.Tarih)
+        </td>
+        
+        
+        
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

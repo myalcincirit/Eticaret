@@ -15,7 +15,8 @@ namespace Eticaret.Models.Mapping
             this.ToTable("Slider");
             this.Property(t => t.id).HasColumnName("id");
             this.Property(t => t.ResimYolu).HasColumnName("ResimYolu");
-            this.Property(t => t.inResimYolu).HasColumnName("inResimYolu");
+            this.Property(t => t.BirResimYolu).HasColumnName("BirResimYolu");
+            this.Property(t => t.İkiResimYolu).HasColumnName("İkiResimYolu");
         }
     }
 }
