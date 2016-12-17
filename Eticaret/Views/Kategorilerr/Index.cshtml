@@ -7,9 +7,13 @@
     <div class="row">
         @foreach (var item in Model)
         {
-            
-                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12"><a href="/Detay/Index/@item.id"><img title="@item.UrunAdi" alt="@item.UrunAdi" src="/@item.UrunResimYol"></a></div>               
-            
+
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                <a href="/Detay/Index/@item.id"><img title="@item.UrunAdi" alt="@item.UrunAdi" src="/@item.UrunResimYol"></a>
+                <h4><a href="/Detay/Index/@item.id">@item.UrunAdi</a></h4>
+                <p class="price"> $@item.UrunFiyati </p>
+                <button class="btn-primary" type="button" onclick=""><span>Satin al</span></button>
+            </div>
         }
             </div>
 </div>
